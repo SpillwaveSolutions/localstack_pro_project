@@ -68,3 +68,5 @@ data/*.csv
 !data/sample-tasks.csv
 
 .pmarkdownc/
+
+project_structure.md

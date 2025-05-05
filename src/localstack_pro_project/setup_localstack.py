@@ -12,6 +12,16 @@ logger = logging.getLogger(__name__)
 env_path = Path(__file__).parent.parent.parent / '.env'
 load_dotenv(dotenv_path=env_path)
 
+def get_lambda_client():
+    """Create and return a LocalStack Lambda client using environment variables"""
+    return boto3.client(
+        'lambda',
+        endpoint_url=os.getenv('LOCALSTACK_ENDPOINT'),
+        aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+        aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
+        region_name=os.getenv('AWS_REGION')
+    )
+
 def get_s3_client():
     """Create and return a LocalStack S3 client using environment variables"""
     return boto3.client(
