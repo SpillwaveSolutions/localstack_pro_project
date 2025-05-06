@@ -5,7 +5,7 @@ import io
 import logging
 from pathlib import Path
 from dotenv import load_dotenv
-from localstack_pro_project.setup_localstack import get_s3_client
+from localstack_pro_project.cloud_setup import get_s3_client, is_local_env
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')

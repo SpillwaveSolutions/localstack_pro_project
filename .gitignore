@@ -23,6 +23,7 @@ MANIFEST
 
 # Virtual Environment
 .env
+.env.*
 .venv
 env/
 venv/
@@ -30,6 +31,8 @@ ENV/
 env.bak/
 venv.bak/
 .python-version
+env_aws.sh
+
 
 # Poetry
 poetry.lock

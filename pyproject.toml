@@ -23,7 +23,8 @@ awscli-local = "^0.22.0"
 moto = "^4.2.7"
 
 [tool.poetry.scripts]
-setup-localstack = "localstack_pro_project.setup_localstack:main"
+setup-cloud = "localstack_pro_project.cloud_setup:main"
 upload-todo = "localstack_pro_project.uploader:main"
 read-todo = "localstack_pro_project.downloader:main"
 deploy-lambda = "localstack_pro_project.deploy_lambda:main"
+switch-env = "localstack_pro_project.switch_env:main"

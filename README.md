@@ -120,7 +120,7 @@ poetry run pytest
 This project demonstrates the local-first development workflow described in "The Local Cloud Revolution: Rethinking AWS Development Workflows" chapter:
 
 1. We use LocalStack Pro to emulate AWS S3 on your machine
-2. The `setup_localstack.py` script creates the necessary S3 bucket
+2. The `cloud_localstack.py` script creates the necessary S3 bucket
 3. The `uploader.py` script pushes a CSV file to the emulated S3 bucket
 4. The `downloader.py` script retrieves and displays the CSV data
 
